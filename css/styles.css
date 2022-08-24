@@ -426,3 +426,158 @@ footer {
 	font-size: 3rem;
 	margin-bottom: 0.2em;
 }
+
+
+.project-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--bg-alt);
+	max-width: 950px;
+	width: 95%;
+	margin: 2em auto;
+	padding: 2em;
+	text-align: center;
+	box-shadow: var(--container-shadow);
+	border-radius: 1em;
+}
+
+.project img {
+	border-radius: 0.5em;
+}
+
+.project-content {
+	flex-basis: 50%;
+	margin-left: 2em;
+}
+
+.project-content p {
+	margin: 1.2em 0;
+}
+
+.project-skill,
+.project-link {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project-skill {
+	margin: 0 auto;
+}
+
+.project-skill li {
+	font-size: 0.8rem;
+	font-weight: 700;
+	margin: 0.3em 0.2em;
+	padding: 0.4em 0.6em;
+	border-radius: 5em;
+	background-color: var(--skin-color-light);
+	color: var(--skin-color);
+}
+
+.project-link {
+	margin-top: 1.2em;
+}
+
+
+/* =================
+        4. components
+   ================= */
+
+/* buttons */
+
+.btn {
+	display: inline-block;
+	border-radius: 5em;
+	font-size: 0.8rem;
+	font-weight: 600;
+	transition: transform 0.2s ease-in-out;
+	padding: 1em 1.6em;
+	background-color: var(--skin-color);
+	color: var(--bg);
+}
+
+.btn:hover {
+	background-color: var(--skin-color);
+}
+
+.btn:active {
+	transform: translateY(-0.4em);
+}
+
+/* icons */
+
+.icon-normal,
+.icon-border {
+	margin: 0.2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 1.2rem;
+}
+
+.icon-normal:hover,
+.icon-border:hover {
+	color: var(--bg);
+}
+
+.icon-normal::after,
+.icon-border::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	z-index: -1;
+	background-color: var(--skin-color);
+	border-radius: 50%;
+	transition: all 0.25s ease-in-out;
+}
+
+.icon-normal:hover::after,
+.icon-border:hover::after {
+	width: 100%;
+	height: 100%;
+	border: 0.2em solid var(--skin-color);
+}
+
+.icon-normal {
+	width: 1.6em;
+	height: 1.6em;
+	color: var(--fg-alt);
+}
+
+.icon-border {
+	width: 2.2em;
+	height: 2.2em;
+	color: var(--skin-color);
+	border: 0.15em solid var(--skin-color);
+}
+
+
+/* ============
+	5. utilities
+   ============ */
+
+.fa-bars {
+	display: none;
+}
+
+.header-title {
+	font-weight: 700;
+	text-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav .link {
+	color: var(--fg-alt);
+}
+
+@media (max-width: 580px) {
+	.fa-bars {
+		display: flex;
+	}
+}
