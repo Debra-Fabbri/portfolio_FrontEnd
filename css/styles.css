@@ -359,7 +359,7 @@ footer {
 
 /*--------- MAIN --------- */
 
-.stack, .project{
+.stack, .project, .about{
 	margin-top: 8rem;
 }
 
@@ -378,7 +378,38 @@ footer {
 	border-bottom: 0.2em solid var(--skin-color);
 }
 
+/*ABOUT ME*/
 
+.about{
+	background-color: var(--bg-alt);
+	box-shadow: var(--container-shadow);
+	border-radius: 1em;
+}
+
+.about__container {
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 4rem;
+	align-items: center;
+}
+
+.about__img{
+	width: 400px;
+	border-radius: 0.75rem;
+	justify-self: center;
+}
+
+.about__heading {
+	font-size: var(--h3-font-size);
+	margin-bottom: var(--mb-0-75);
+}
+
+.about__description {
+	text-align: justify;
+	padding-right: 6rem;
+	margin-bottom: var(--mb-2);
+}
+
+/*STACK - SKILLS */
 .stack-container {
 	margin: 0 auto;
 	display: flex;
@@ -427,6 +458,8 @@ footer {
 	margin-bottom: 0.2em;
 }
 
+
+/*PROYECTOS*/
 
 .project-container {
 	display: flex;
