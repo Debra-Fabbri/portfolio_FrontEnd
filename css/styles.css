@@ -636,6 +636,30 @@ footer {
 	margin: 3em;
 }
 
+
+/*FOOTER*/
+
+footer {
+	height: 4em;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: var(--bg-alt);
+	box-shadow: 0 -0.1em 1em rgb(0, 0, 0, 0.1);
+}
+
+footer ul {
+	display: flex;
+}
+
+footer small {
+	font-weight: 500;
+	margin-top: 0.5em;
+}
+
+
 /* =================
         4. components
    ================= */
