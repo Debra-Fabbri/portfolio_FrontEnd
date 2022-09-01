@@ -15,7 +15,7 @@
     --hue-color:242;
 
     /* HSL Color Mode */
-    --skin-color: hsl(34, 94%, 57%);
+    --skin-color: #C1EFFF;
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 85%);
     --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -282,13 +282,13 @@ footer {
 	transition: .4s;
 	border-radius: 30px;
 	width: 100px;
-	color: var(--text-color);
+	color: black;
 	font-weight: var(--font-medium);
 }
 
 .home__login:hover, .home__button:hover{
 	transform: translateY(.25rem);
-	color: var(--text-color);
+	color: black;
 }
 
 .home__wrapper{
@@ -325,7 +325,7 @@ footer {
 	align-items: center;
 	column-gap: .5rem;
 	background-color: var(--skin-color);
-	color: var(--title-color);
+	color: black;
 	padding: .75rem 1.4rem;
 	border-radius: 30px;
 	font-weight: var(--font-medium);
