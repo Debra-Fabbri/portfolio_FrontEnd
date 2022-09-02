@@ -294,7 +294,7 @@ footer {
 .home__wrapper{
 	display: flex;
 	column-gap: 1.8rem;
-	background: url(../assets/banner.jpg);
+	background: url(../assets/banner2.jpg) no-repeat;
 	overflow: hidden;
 	object-fit: cover;
 }
