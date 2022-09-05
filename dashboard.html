@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of full stack developer Debra Fabbri" />
+    <meta name="keywords" content="fullstack developer, fullstack, portfolio,
+                personal website, html, css, javascript, angular, java, Mysql" />
+    <title>Dashboard | Portfolio Web | Debra Fabbri</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="body-dark">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbarIcons">
+                <img class="home__social-logo"
+                    src="//argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png"
+                    alt="argpprod">
+                <div class="home__social-links">
+                    <a href="https://www.linkedin.com/in/debrafabbrilobos/" class="home__social-link mobile__links"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Debra-Fabbri" class="home__social-link mobile__links"><i
+                            class="fab fa-github"></i></a>
+                    <a href="#" class="home__login">LogOut</a>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Portfolio Web | Debra Fabbri</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#qualification" class="nav-link">Qualification</a></li>
+                        <li class="nav-item"><a href="#stack" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <div class="home__social-links">
+                            <a href="https://www.linkedin.com/in/debrafabbrilobos/" class="home__social-link nablink"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Debra-Fabbri" class="home__social-link nablink"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
+                        <li class="nav__item"><a href="#stack" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </aside>
+    <header class="header">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__social">
+                    <img class="home__social-logo"
+                        src="//argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png"
+                        alt="argpprod">
+                    <div class="home__social-links">
+                        <a href="https://www.linkedin.com/in/debrafabbrilobos/" class="home__social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Debra-Fabbri" class="home__social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" class="home__login">LogOut</a>
+                    </div>
+                </div>
+                <div class="home__wrapper">
+                    <div class="container cols cols0">
+                        <div class="row">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default" placeholder="Hi! I'm Debra Fabbri">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default"
+                                    placeholder="I'm Full Stack Developer Jr">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis ex asperiores cumque ullam">
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                            <a href="" class="home__button"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="cols cols1">
+                        <div class="btns" style="justify-content: flex-end; display: flex;">
+                            <a href="" class="home__button"><i class="fa-solid fa-pen"></i></a>
+                        </div>
+                        <div class="imgbox">
+                            <img src="./assets/FabbriDeb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container container grid">
+                <div class="row">
+                    <a href="" class="home__button" style="width: 10px;"><i class="fa-solid fa-pen"></i></a>
+                    <img src="./assets/FabbriDeb.png" alt="" class="about__img">
+                </div>
+                <div class="about__data">
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="Hi! I'm Debra Fabbri">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm"
+                                placeholder="Full Stack developer, lorem Lorem ipsum dolor sit amet,consectetur adipisicing elit. Vitae">
+                        </div>
+                    </div>
+                    <div class="about__button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="home__button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Subir CV
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cargar nuevo CV</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Seleccione un nuevo archivo</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns" style="margin-top: 20px;">
+                            <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                            <a href="" class="home__button"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="qualification section" id="qualification">
+            <h2 class="section-title">Qualification</h2>
+            <div class="qualification__container container grid">
+                <div class="educaction">
+                    <div class="row">
+                        <h3 class="qualification__title">
+                            <i class="fas fa-graduation-cap"></i> Education
+                            <!-- Button trigger modal -->
+                            <button type="button" class="home__button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Qualification</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="timeline__item">
+                                                <div class="circle__dot"></div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                                            class="fas fa-calendar-alt"></i></span>
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="row timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="Tecnicatura Universitaria Inteligencia Artificial">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="Universidad Nacional Rosario - FCEIA">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2022 - Present">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Ingenieria Industrial">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="Universidad Nacional Rosario - FCEIA">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2020 - Mar 2022">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <div class="row">
+                        <h3 class="qualification__title">
+                            <i class="fas fa-graduation-cap"></i> Certifications
+                            <!-- Button trigger modal -->
+                            <button type="button" class="home__button" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <i class="fas fa-graduation-cap"></i> Certifications
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="timeline__item">
+                                                <div class="circle__dot"></div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                                            class="fas fa-calendar-alt"></i></span>
+                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="row timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Full Stack Developer">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="#YoProgramo - Argentina Programa">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Agos 2022 - Present">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="JavaScript">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Coderhouse">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2020 - Mar 2022">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Desarrollo Web">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Coderhouse">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2020 - Mar 2022">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3 class="qualification__title">
+                        <i class="fas fa-briefcase"></i> Experience
+                        <!-- Button trigger modal -->
+                        <button type="button" class="home__button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <i class="fas fa-graduation-cap"></i> Qualification
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="timeline__item">
+                                            <div class="circle__dot"></div>
+                                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                                        class="fas fa-calendar-alt"></i></span>
+                                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Infinita serendipia">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Desarrollo Web - Freelance">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2020 - Mar 2022">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Fundacion Consultores de Empresas">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Desarrollo Web - Freelance">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 timeline__title">
+                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                        class="fas fa-calendar-alt"></i></span>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-sm" placeholder="Mar 2020 - Mar 2022">
+                            </div>
+                            <div class="btns" style="margin-top: 30px;">
+                                <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                                <a href="" class="home__button"><i class="fa-solid fa-trash"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

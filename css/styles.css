@@ -323,6 +323,7 @@ footer {
 .home__button {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	column-gap: .5rem;
 	background-color: var(--skin-color);
 	color: black;
