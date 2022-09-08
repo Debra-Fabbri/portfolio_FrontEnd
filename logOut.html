@@ -8,7 +8,7 @@
     <meta name="description" content="Portfolio website of full stack developer Debra Fabbri" />
     <meta name="keywords" content="fullstack developer, fullstack, portfolio,
                 personal website, html, css, javascript, angular, java, Mysql" />
-    <title>Dashboard | Portfolio Web | Debra Fabbri</title>
+    <title>LogOut | Portfolio Web | Debra Fabbri</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
@@ -111,10 +111,9 @@
                                     aria-describedby="inputGroup-sizing-default"
                                     placeholder="I'm Full Stack Developer Jr">
                             </div>
-                            <div class="input-group input-group-sm mb-3">
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-sm"
-                                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis ex asperiores cumque ullam">
+                            <div class="form-floating" style="margin-bottom: 20px;">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
                             </div>
                         </div>
                         <div class="btns">
@@ -148,10 +147,9 @@
                             <input type="text" class="form-control" aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-default" placeholder="Hi! I'm Debra Fabbri">
                         </div>
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="text" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-sm"
-                                placeholder="Full Stack developer, lorem Lorem ipsum dolor sit amet,consectetur adipisicing elit. Vitae">
+                        <div class="form-floating" style="margin-bottom: 20px;">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                         </div>
                     </div>
                     <div class="about__button">
@@ -211,7 +209,8 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Qualification</h5>
+                                            <h5 class="modal-title" id="staticBackdropLabel" style="color: black;">
+                                                Education</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -219,17 +218,20 @@
                                             <div class="timeline__item">
                                                 <div class="circle__dot"></div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
                                                     <span class="input-group-text" id="inputGroup-sizing-sm"><i
                                                             class="fas fa-calendar-alt"></i></span>
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                             </div>
@@ -237,7 +239,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -295,20 +297,21 @@
                 <div class="certifications">
                     <div class="row">
                         <h3 class="qualification__title">
-                            <i class="fas fa-graduation-cap"></i> Certifications
+                            <i class="fas fa-graduation-cap"></i>Certifications
                             <!-- Button trigger modal -->
                             <button type="button" class="home__button" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
+                                data-bs-target="#certifications">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                            <div class="modal fade" id="certifications" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="certificationsLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <i class="fas fa-graduation-cap"></i> Certifications
+                                            <h5 class="modal-title" id="certificationsLabel" style="color: black;">
+                                                Certifications</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -316,17 +319,20 @@
                                             <div class="timeline__item">
                                                 <div class="circle__dot"></div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                                 <div class="input-group input-group-sm mb-3 timeline__title">
                                                     <span class="input-group-text" id="inputGroup-sizing-sm"><i
                                                             class="fas fa-calendar-alt"></i></span>
-                                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
                                                         aria-describedby="inputGroup-sizing-sm">
                                                 </div>
                                             </div>
@@ -334,7 +340,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -409,52 +415,57 @@
                     </div>
                 </div>
                 <div class="experience">
-                    <h3 class="qualification__title">
-                        <i class="fas fa-briefcase"></i> Experience
-                        <!-- Button trigger modal -->
-                        <button type="button" class="home__button" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <i class="fas fa-graduation-cap"></i> Qualification
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="timeline__item">
-                                            <div class="circle__dot"></div>
-                                            <div class="input-group input-group-sm mb-3 timeline__title">
-                                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                                    aria-describedby="inputGroup-sizing-sm">
-                                            </div>
-                                            <div class="input-group input-group-sm mb-3 timeline__title">
-                                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                                    aria-describedby="inputGroup-sizing-sm">
-                                            </div>
-                                            <div class="input-group input-group-sm mb-3 timeline__title">
-                                                <span class="input-group-text" id="inputGroup-sizing-sm"><i
-                                                        class="fas fa-calendar-alt"></i></span>
-                                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                                    aria-describedby="inputGroup-sizing-sm">
+                    <div class="row">
+                        <h3 class="qualification__title">
+                            <i class="fas fa-work-cap"></i> Experience
+                            <!-- Button trigger modal -->
+                            <button type="button" class="home__button" data-bs-toggle="modal"
+                                data-bs-target="#experience">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="experience" data-bs-backdrop="static" data-bs-keyboard="false"
+                                tabindex="-1" aria-labelledby="experienceLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="experienceLabel" style="color: black;">
+                                                Experience</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="timeline__item">
+                                                <div class="circle__dot"></div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
+                                                <div class="input-group input-group-sm mb-3 timeline__title">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm"><i
+                                                            class="fas fa-calendar-alt"></i></span>
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-sm">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
                                             <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </h3>
+                        </h3>
+                    </div>
                     <div class="timeline">
                         <div class="timeline__item">
                             <div class="circle__dot"></div>
@@ -481,7 +492,8 @@
                             <div class="circle__dot"></div>
                             <div class="input-group input-group-sm mb-3 timeline__title">
                                 <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-sm" placeholder="Fundacion Consultores de Empresas">
+                                    aria-describedby="inputGroup-sizing-sm"
+                                    placeholder="Fundacion Consultores de Empresas">
                             </div>
                             <div class="input-group input-group-sm mb-3 timeline__title">
                                 <input type="text" class="form-control" aria-label="Sizing example input"
@@ -502,7 +514,393 @@
                 </div>
             </div>
         </section>
+        <section id="stack" class="stack">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="stack-container">
+                <div class="tech-container">
+                    <i class="devicon-html5-plain colored"></i>HTML
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-css3-plain colored"></i> CSS
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-sass-plain colored"></i> SASS
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-bootstrap-plain colored"></i> Bootstrap
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-javascript-plain colored"></i>JavaScript
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-angularjs-plain colored"></i>Angular.Js
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-typescript-plain colored"></i>TypeScript
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-java-plain-wordmark colored"></i>Java
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-mysql-plain colored"></i>Mysql
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-linux-plain"></i>Linux
+                </div>
+                <div class="tech-container">
+                    <i class="devicon-python-plain colored"></i>Python
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="project">
+            <div class="container p_container">
+                <h2 class="section-title">Projects</h2>
+                <!-- Button trigger modal -->
+                <button type="button" class="home__button" data-bs-toggle="modal" data-bs-target="#nuevoModal"
+                    data-bs-whatever="@mdo"><i class="fa-solid fa-plus"></i></button>
+                <!-- Vertically centered modal -->
+                <div class="modal fade" id="nuevoModal" tabindex="-1" aria-labelledby="nuevoModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="nuevoModalLabel" style="color: black;">New Projects</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Image:</label>
+                                        <input type="file" class="form-control" id="inputGroupFile04"
+                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Title:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">About project:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <img src="" alt="">
+                <div class="project-content">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="TITLE">
+                    </div>
+                    <div class="form-floating" style="margin-bottom: 20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <ul class="project-skill">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>TypeScript</li>
+                        <li>Angular.js</li>
+                        <li>Java</li>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>SpringBoot</li>
+                    </ul>
+                    <ul class="project-link">
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="icon-border fas fa-code" data-bs-toggle="modal"
+                                data-bs-target="#linkgit">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkgit" tabindex="-1" aria-labelledby="linkgitLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkgitLabel">Link a Github</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button"  class="icon-border fas fa-external-link-alt" data-bs-toggle="modal"
+                                data-bs-target="#linkdemo">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkdemo" tabindex="-1" aria-labelledby="linkdemoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkdemoLabel">Link demo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btns" style="margin-top: 20px;">
+                        <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                        <a href="" class="home__button"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <img src="" alt="">
+                <div class="project-content">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="TITLE">
+                    </div>
+                    <div class="form-floating" style="margin-bottom: 20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <ul class="project-skill">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Typescript</li>
+                        <li>AngularJs</li>
+                    </ul>
+                    <ul class="project-link">
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="icon-border fas fa-code" data-bs-toggle="modal"
+                                data-bs-target="#linkgitB">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkgitB" tabindex="-1" aria-labelledby="linkgitBLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkgitBLabel">Link a Github</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button"  class="icon-border fas fa-external-link-alt" data-bs-toggle="modal"
+                                data-bs-target="#linkdemo">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkdemo" tabindex="-1" aria-labelledby="linkdemoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkdemoLabel">Link demo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btns" style="margin-top: 20px;">
+                        <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                        <a href="" class="home__button"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <img src="" alt="">
+                <div class="project-content">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="TITLE">
+                    </div>
+                    <div class="form-floating" style="margin-bottom: 20px;">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <ul class="project-skill">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul class="project-link">
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="icon-border fas fa-code" data-bs-toggle="modal"
+                                data-bs-target="#linkgit">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkgit" tabindex="-1" aria-labelledby="linkgitLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkgitLabel">Link a Github</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- Button trigger modal -->
+                            <button type="button"  class="icon-border fas fa-external-link-alt" data-bs-toggle="modal"
+                                data-bs-target="#linkdemo">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="linkdemo" tabindex="-1" aria-labelledby="linkdemoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="linkdemoLabel">Link demo</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btns" style="margin-top: 20px;">
+                        <a href="" class="home__button"><i class="fa-solid fa-circle-check"></i></a>
+                        <a href="" class="home__button"><i class="fa-sharp fa-solid fa-circle-xmark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="container">
+                <div class="row contact-social">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" class="home__social-link"><i class="fab fa-linkedin"></i></a>
+                            <h6 class="card-subtitle mb-2">Linkedin</h6>
+                            <a href="https://www.linkedin.com/in/debrafabbrilobos/" class="card-a">Pongamosnos en
+                                contacto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <a href="#" class="home__social-link"><i class="fab fa-github"></i></a>
+                            <h6 class="card-subtitle mb-2">Github</h6>
+                            <a href="https://github.com/Debra-Fabbri" class="card-a">Conozca mis trabajos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="row g-3 contact-form">
+                        <div class="col-4">
+                            <label for="validationServer01" class="form-label">Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-4">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-8">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-12 submit">
+                            <button class="home__button" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <small>&copy; 2022 Debra Fabbri - #YoProgramo </small>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
